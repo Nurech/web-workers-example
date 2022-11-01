@@ -51,7 +51,9 @@ export class DataService {
 
   runWorker(num: number) {
     if (typeof Worker !== 'undefined') {
-      const worker = new Worker(new URL('./app.worker', import.meta.url)); // Spawn a worker
+      let url = import.meta.url
+      console.log(url)
+      const worker = new Worker(new URL('./app.worker', url)); // Spawn a worker
       worker.postMessage({num: num}); // Send to data to worker
       worker.onmessage = ({data}) => { // On return from the worker
         this.addWorkerAnswer(data as Fib);
