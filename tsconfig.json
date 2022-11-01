@@ -12,14 +12,15 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
+    "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "Node",
     "importHelpers": true,
-    "target": "es2020",
+    "target": "es2022",
     "module": "es2022",
     "lib": [
-      "es2020",
+      "es2022",
       "dom"
     ]
   },

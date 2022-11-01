@@ -33,8 +33,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js",
-              "src/app/services/app.worker.ts"
+              "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"
             ],
             "webWorkerTsConfig": "tsconfig.worker.json"
           },
@@ -110,8 +109,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js",
-              "src/app/services/app.worker.ts"
+              "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"
             ],
             "webWorkerTsConfig": "tsconfig.worker.json"
           }
