@@ -27,7 +27,6 @@
     "@types/jasmine": "4.0.3",
     "@webcomponents/webcomponentsjs": "2.7.0",
     "bootstrap": "5.2.2",
-    "import-meta-resolve": "^2.1.0",
     "lit": "2.4.0",
     "rxjs": "7.5.7",
     "tslib": "2.4.1",
