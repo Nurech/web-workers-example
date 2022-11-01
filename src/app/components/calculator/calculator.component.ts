@@ -20,7 +20,7 @@ export class CalculatorComponent {
   }));
 
   workerAnswers$ = this.dataService.workerAnswers$.pipe(tap(data => {
-    if (data.length === this.workerSolutions) {
+    if (data.length == this.workerSolutions) {
       this.stopTimer();
     }
   }));
@@ -37,7 +37,6 @@ export class CalculatorComponent {
   stopTimer() {
     this.endTime = new Date().getTime();
     this.workerTotalTime = this.endTime - this.startTime;
-    console.warn(this.workerTotalTime, this.endTime, this.startTime);
   }
 
   onRadioChangeNoWorkers(event: MatRadioChange) {
