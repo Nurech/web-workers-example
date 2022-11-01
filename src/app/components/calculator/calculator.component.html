@@ -1,0 +1,129 @@
+<div class="container p-3">
+
+  <div class="row">
+
+    <div class="col">
+      <mat-card>
+        <mat-card-header>
+          <div mat-card-avatar class="w-25">
+            <mat-spinner [diameter]="60"></mat-spinner>
+          </div>
+          <mat-card-title>No Web Workers</mat-card-title>
+          <mat-card-subtitle>Solve Fibonacci sequences</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="assets/img.png" alt="Fibonacci image" class="p-2">
+        <mat-card-content>
+
+
+          <label id="radio-group-label1"> Select number of sequences to solve</label>
+          <mat-radio-group id="radio-group1" aria-label="Select number of sequences to solve" class="d-flex w-100 justify-content-around"
+                           (change)="onRadioChangeNoWorkers($event)">
+            <mat-radio-button value="1">1</mat-radio-button>
+            <mat-radio-button value="3" [checked]="true">3</mat-radio-button>
+            <mat-radio-button value="5">5</mat-radio-button>
+          </mat-radio-group>
+
+
+          <mat-list *ngFor="let item of (noWorkerAnswers$ | async); let last = last; index as i">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="row d-flex flex-row justify-content-center align-items-center w-100 flex-nowrap">
+                <div class="col-2 number">
+                  {{i + 1}}
+                </div>
+                <div class="col-2">
+                  <mat-checkbox [disabled]="true" [checked]="item.time !== 0"></mat-checkbox>
+                </div>
+                <div class="col-auto number nowrap">
+                  {{item.time | number : '1.0-0'}} ms
+                </div>
+              </div>
+            </mat-list-item>
+            <ng-container *ngIf="last">
+              <mat-divider class="pb-2"></mat-divider>
+              <mat-list-item>
+                <div class="row d-flex flex-row justify-content-center align-items-center w-100 flex-nowrap">
+                  <div class="col number">
+                    Total time:
+                  </div>
+                  <div class="col-auto number nowrap">
+                    {{noWorkerTotalTime | number : '1.0-0'}} ms
+                  </div>
+                </div>
+              </mat-list-item>
+            </ng-container>
+          </mat-list>
+
+
+        </mat-card-content>
+        <mat-card-actions class="d-flex align-items-center justify-content-center">
+          <button mat-raised-button color="primary" (click)="startSolvingNoWorkers()">START SOLVING</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <div class="col">
+      <mat-card>
+        <mat-card-header>
+          <div mat-card-avatar class="w-25">
+            <mat-spinner [diameter]="60"></mat-spinner>
+          </div>
+          <mat-card-title>Web Workers</mat-card-title>
+          <mat-card-subtitle>Solve Fibonacci sequences</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="assets/img.png" alt="Fibonacci image" class="p-2">
+        <mat-card-content>
+
+
+          <label id="radio-group-label2"> Select number of sequences to solve</label>
+          <mat-radio-group id="radio-group2" aria-label="Select number of sequences to solve" class="d-flex w-100 justify-content-around"
+                           (change)="onRadioChangeWorkers($event)">
+            <mat-radio-button value="1">1</mat-radio-button>
+            <mat-radio-button value="3" [checked]="true">3</mat-radio-button>
+            <mat-radio-button value="5">5</mat-radio-button>
+          </mat-radio-group>
+
+
+          <mat-list *ngFor="let item of (workerAnswers$ | async); let last = last; index as i">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="row d-flex flex-row justify-content-center align-items-center w-100 flex-nowrap">
+                <div class="col-2 number">
+                  {{i + 1}}
+                </div>
+                <div class="col-2">
+                  <mat-checkbox [disabled]="true" [checked]="item.time !== 0"></mat-checkbox>
+                </div>
+                <div class="col-auto number nowrap">
+                  {{item.time | number : '1.0-0'}} ms
+                </div>
+              </div>
+            </mat-list-item>
+            <ng-container *ngIf="last">
+              <mat-divider class="pb-2"></mat-divider>
+              <mat-list-item>
+                <div class="row d-flex flex-row justify-content-center align-items-center w-100 flex-nowrap">
+                  <div class="col number">
+                    Total time:
+                  </div>
+                  <div class="col-auto number nowrap">
+                    {{workerTotalTime | number : '1.0-0'}} ms
+                  </div>
+                </div>
+              </mat-list-item>
+            </ng-container>
+          </mat-list>
+
+
+        </mat-card-content>
+        <mat-card-actions class="d-flex align-items-center justify-content-center">
+          <button mat-raised-button color="primary" (click)="startSolvingWorkers()">START SOLVING</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="row py-5">
+    <button mat-button color="primary">Go to article</button>
+  </div>
+</div>
