@@ -16,10 +16,10 @@
     "experimentalDecorators": true,
     "moduleResolution": "Node",
     "importHelpers": true,
-    "target": "es2022",
+    "target": "es2020",
     "module": "es2022",
     "lib": [
-      "es2022",
+      "es2020",
       "dom"
     ]
   },
