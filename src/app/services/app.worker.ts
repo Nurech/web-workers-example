@@ -1,6 +1,3 @@
-/// <reference lib="webworker" />
-
-
 addEventListener('message', ({data}) => {
 
   // The typical fibonacci implementation (warning! slow!)
