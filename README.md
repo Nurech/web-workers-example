@@ -2,7 +2,7 @@
 
 Go to article: https://medium.com/@joosep.parts/b1ef96c46fc0
 
-Demo app live: https://4200-nurech-webworkersexampl-tq3n0y94ymv.ws-eu73.gitpod.io/ 
+Demo app live: https://codesandbox.io/p/github/Nurech/web-workers-example/draft/serene-borg?file=%2Fsrc%2Fapp%2Fservices%2Fdata.service.ts&selection=%5B%7B%22endColumn%22%3A1%2C%22endLineNumber%22%3A53%2C%22startColumn%22%3A1%2C%22startLineNumber%22%3A52%7D%5D 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
 
