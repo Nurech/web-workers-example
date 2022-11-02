@@ -1,6 +1,6 @@
 # WebWorkersExample
 
-Go to article:
+Go to article: https://medium.com/@joosep.parts/b1ef96c46fc0
 
 Demo app live: https://4200-nurech-webworkersexampl-tq3n0y94ymv.ws-eu73.gitpod.io/ 
 
