@@ -2,7 +2,7 @@
 
 Go to article:
 
-Stackblitz: 
+Demo app live: https://4200-nurech-webworkersexampl-tq3n0y94ymv.ws-eu73.gitpod.io/ 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
 
