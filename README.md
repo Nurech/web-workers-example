@@ -1,6 +1,7 @@
 # WebWorkersExample
 
 Go to article: https://medium.com/@joosep.parts/b1ef96c46fc0
+![image](https://github.com/Nurech/web-workers-example/assets/20840114/0b82a82f-ef1a-4322-9ab4-d2676529ba00)
 
 Demo app live: https://codesandbox.io/p/github/Nurech/web-workers-example/draft/serene-borg?file=%2Fsrc%2Fapp%2Fservices%2Fdata.service.ts&selection=%5B%7B%22endColumn%22%3A1%2C%22endLineNumber%22%3A53%2C%22startColumn%22%3A1%2C%22startLineNumber%22%3A52%7D%5D 
 
